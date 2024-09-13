@@ -1,10 +1,11 @@
-<H3>ENTER YOUR NAME: VASUNDRA SRI R</H3>
-<H3>ENTER YOUR REGISTER NO. 212222230168</H3>
+<H3>NAME: VASUNDRA SRI R</H3>
+<H3>REGISTER NO:212222230168</H3>
 <H3>EX. NO.5</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER> Implementation of Kalman Filter</H1>
 <H3>Aim:</H3> To Construct a Python Code to implement the Kalman filter to predict the position and velocity of an object.
-<H3>Algorithm:</H3>
+
+### Algorithm:
 Step 1: Define the state transition model F, the observation model H, the process noise covariance Q, the measurement noise covariance R, the initial state estimate x0, and the initial error covariance P0.<BR>
 Step 2:  Create a KalmanFilter object with these parameters.<BR>
 Step 3: Simulate the movement of the object for a number of time steps, generating true states and measurements. <BR>
@@ -12,8 +13,9 @@ Step 3: For each measurement, predict the next state using kf.predict().<BR>
 Step 4: Update the state estimate based on the measurement using kf.update().<BR>
 Step 5: Store the estimated state in a list.<BR>
 Step 6: Plot the true and estimated positions.<BR>
-<H3>Program:</H3>
-```
+
+### Program:
+```PYTHON
 import numpy as np
 import matplotlib.pyplot as plt
 class KalmanFi1ter:
@@ -56,10 +58,10 @@ plt.plot([s[0] for s in est_states],label="Estimate")
 plt.legend()
 plt.show()
 ```
-<H3>Output:</H3>
 
-![Screenshot 2024-09-13 172543](https://github.com/user-attachments/assets/884e904c-97f3-4783-aae8-0a1b2e4b6804)
+### Output:
 
+![Screenshot 2024-09-13 172543](https://github.com/user-attachments/assets/337b8e93-36cd-4e09-83ea-409227c0423f)
 
 <H3>Results:</H3>
-Thus, Kalman filter is implemented to predict the next position and   velocity in Python.
+Thus, Kalman filter is implemented to predict the next position and velocity in Python
